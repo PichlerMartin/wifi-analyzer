@@ -1,4 +1,4 @@
 package support;
 
-public class Globals {
+public abstract class Globals {
 }

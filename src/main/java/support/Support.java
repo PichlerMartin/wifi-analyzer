@@ -1,4 +1,4 @@
 package support;
 
-public class Support {
+public abstract class Support {
 }
