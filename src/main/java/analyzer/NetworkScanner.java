@@ -16,6 +16,7 @@ public class NetworkScanner {
             String command = "netsh wlan show networks mode=Bssid";
             Process p = Runtime.getRuntime().exec(command);
             try {
+                //  ToDo:   code is stuck here, check for solution in next lesson
                 p.waitFor();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
