@@ -25,17 +25,17 @@ public class NetworkScanner {
             );
             String line;
             StringBuilder sb = new StringBuilder();
-            String ssidArr[];
+            String ssidArr[] = new String[0];
 
             while ((line = reader.readLine()) != null) {
-                //System.out.println(line);
+                System.out.println(line);
                 if (line.contains("SSID ") && !line.contains("BSSID ")) {
                     sb.append(line);
                     networkList.add(line.split(":")[1]);
                     //System.out.println("data : " + ssidArr[1]);
                 }
             }
-            //System.out.println(networkList);
+            System.out.println(networkList);
         } catch (IOException e) {
         }
         return networkList;
