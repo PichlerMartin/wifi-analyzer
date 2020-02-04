@@ -8,6 +8,7 @@ import java.util.ArrayList;
 /**
  * source: https://stackoverflow.com/questions/15869578/java-wifi-api
  */
+@SuppressWarnings("ALL")
 public class NetworkScanner {
     public static ArrayList scanWiFi() {
         ArrayList<String> networkList = new ArrayList<>();
@@ -16,7 +17,7 @@ public class NetworkScanner {
             String command = "netsh wlan show networks mode=Bssid";
             Process p = Runtime.getRuntime().exec(command);
             try {
-                //  ToDo:   code is stuck here, check for solution in next lesson
+                //  ToDo:   this project is defunct, and continued in c#
                 p.waitFor();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
